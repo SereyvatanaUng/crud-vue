@@ -9,7 +9,12 @@ export default createStore({
     animalsCount: (state) => {
       return state.catsData.length + state.dogsData.length;
     },
-    getAllCats: () => {},
+    getAllCats: (state) => {
+      return state.catsData;
+    },
+    getAllDogs: (state) => {
+      return state.dogsData;
+    },
   },
   mutations: {
     appendPet: (state, { species, pet }) => {

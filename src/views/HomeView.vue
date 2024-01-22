@@ -1,5 +1,8 @@
 <template>
   <div class="home">
+    <h1>
+      {{ getAllCats.length }}
+    </h1>
     <h1>{{ animalsCount }}</h1>
     <button @click="togglePetForm" class="btn btn-primary mb-5">
       Add new pet
@@ -70,7 +73,7 @@ export default {
     };
   },
   computed: {
-    ...mapGetters(["animalsCount"]),
+    ...mapGetters(["animalsCount", "getAllCats"]),
   },
   methods: {
     ...mapActions(["addPet"]),
