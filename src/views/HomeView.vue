@@ -1,9 +1,10 @@
 <template>
-  <div class="home">
-    <h1>
+  <div class="home-view-container">
+    <h1>Adopt new friend</h1>
+    <p>
       {{ getAllCats.length }}
-    </h1>
-    <h1>{{ animalsCount }}</h1>
+    </p>
+    <p>{{ animalsCount }}</p>
     <button @click="togglePetForm" class="btn btn-primary mb-5">
       Add new pet
     </button>

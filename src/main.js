@@ -1,5 +1,6 @@
 // Import Bootstrap and BootstrapVue CSS files (order is important)
 import "bootstrap/dist/css/bootstrap.css";
+import "@/assets/sass/index.scss";
 
 import { createApp } from "vue";
 import App from "./App.vue";
