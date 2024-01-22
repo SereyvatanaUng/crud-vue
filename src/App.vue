@@ -3,9 +3,14 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/cats">Cats</router-link> |
     <router-link to="/dogs">Dogs</router-link> |
-    <router-link to="/pet">Pet</router-link> |
   </nav>
-  <router-view />
+  <div class="container text-center mt-3">
+    <div class="row">
+      <div col sm="6" offset="3">
+        <router-view />
+      </div>
+    </div>
+  </div>
 </template>
 
 <style lang="scss">

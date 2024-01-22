@@ -21,14 +21,14 @@ const routes = [
     component: DogsPage,
   },
   {
-    path: "/pet",
+    path: "/pets/:species/:id",
     name: "petPage",
     component: PetPage,
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory("http://localhost:8080/"),
+  history: createWebHistory("/"),
   routes,
 });
 
